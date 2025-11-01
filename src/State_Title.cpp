@@ -21,10 +21,10 @@
 using namespace std;
 
 const static wstring OutputDeviceKey = L"Last Output Device";
-const static wstring OutputKeySpecialDisabled = L"[no output device]";
+const static wstring OutputKeySpecialDisabled = L"[No output device]";
 
 const static wstring InputDeviceKey = L"Last Input Device";
-const static wstring InputKeySpecialDisabled = L"[no input device]";
+const static wstring InputKeySpecialDisabled = L"[No input device]";
 
 TitleState::~TitleState()
 {
@@ -414,3 +414,4 @@ void TitleState::Draw(Renderer &renderer) const
    TextWriter tooltip(GetStateWidth() / 2, GetStateHeight() - Layout::ScreenMarginY/2 - tooltip_font_size/2, renderer, true, tooltip_font_size);
    tooltip << m_tooltip;
 }
+
